@@ -1,12 +1,295 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+    <title>Погнали? - приложение для поиска попутчиков в ваше путешествие!</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <body>
+    <header>
+
+      <p class="logo">
+        <a class="logo__link"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
+      </p>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">О сервисе</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Направления</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="authorization">
+        <a class="authorization__link" href="#">Авторизация</a>
+      </p>
+
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Facebook" width="11" height="21"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети VK" width="23" height="12"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Instagram" width="18" height="18"></a>
+        </li>
+      </ul>
+
+    </header>
+
+    <main>
+
+      <h1>В путешествие с крутыми попутчиками!</h1>
+
+      <ul class="feedback">
+        <li class="feedback__item">
+          <a class="feedback__link" href="#">Позвонить нам</a>
+        </li>
+        <li class="feedback__item">
+          <a class="feedback__link" href="#">Написать нам</a>
+        </li>
+        <li class="feedback__item">
+          <a class="feedback__link" href="#">Авторизация</a>
+        </li>
+      </ul>
+
+      <aside class="comment">
+        <h2>Реальные отзывы от реальных пользователей приложения</h2>
+        <p>&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
+        <p>Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</p>
+      </aside>
+
+      <aside class="recommendation">
+        <h2>Рекомендации к использованию приложения</h2>
+        <ol class="recommendation__list">
+          <li class="recommendation__item">Выберите направление</li>
+          <li class="recommendation__item">Изучите идеи путешественников</li>
+          <li class="recommendation__item">Находите тех, кто похож на вас</li>
+          <li class="recommendation__item">Путешествуйте вместе!</li>
+        </ol>
+      </aside>
+
+      <section class="about">
+        <h2 class="about__title">О сервисе</h2>
+        <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p>А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
+      </section>
+
+      <section class="trend">
+        <h2 class="trend__title">Направления</h2>
+        <p>Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.</p>
+        <ul class="trend__list">
+          <li class="trend__item">
+            <h3>Тайланд</h3>
+            <p>Джунгли зовут!</p>
+            <span>18321</span>
+            <p><img src="#" alt="Изображение Тайланда"></p>
+          </li>
+          <li class="trend__item">
+            <h3>Франция</h3>
+            <p>Трэ бьен, манифик!</p>
+            <span>12518</span>
+            <p><img src="#" alt="Изображение Франции"></p>
+          </li>
+          <li class="trend__item">
+            <h3>Чехия</h3>
+            <p>Закоулки старой Европы</p>
+            <span>5326</span>
+            <p><img src="#" alt="Изображение Чехии"></p>
+          </li>
+        </ul>
+        <a class="trend__all-link" href="#">Показать все</a>
+      </section>
+
+      <section class="companions">
+        <h2 class="companions__title">Попутчики</h2>
+        <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p>Теперь можно легко найти единомышлиннков!</p>
+        <ul class="companions__list">
+          <li class="companions__item">
+            <h3><a href="#">Таня Фирсова</a></h3>
+            <div class="countries">
+              <p class="countries__label">хочет посетить</p>
+              <ul class="countries__list">
+                <li class="countries__item"><img src="#" alt="Пользователь планирует посетить Республику Шри-Ланка" width="35" height="24"></li>
+                <li class="countries__item"><img src="#" alt="Пользователь планирует посетить Королевство Тайланд" width="35" height="24"></li>
+                <li class="countries__item"><img src="#" alt="Пользователь планирует посетить Республику Сейшельские острова" width="35" height="24"></li>
+              </ul>
+            </div>
+            <div class="hobby">
+              <p class="hobby__label">увлечения</p>
+              <ul class="hobby__list">
+                <li class="hobby__item"><a class="hobby__link" href="#">#зож</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#пп</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#фитнес</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#пляж</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#авокадо</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#смузи</a></li>
+              </ul>
+            </div>
+            <div class="transport">
+              <p class="transport__label">транспорт</p>
+              <ul class="transport__list">
+                <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать на самолете" width="19" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать на машине" width="17" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать на велосипеде" width="24" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="20" height="21"></li>
+              </ul>
+            </div>
+            <p class="avatar"><img src="#" alt="Изображение прекрасной Тани Фирсовой с золотистой от солнца кожей и в ярком купальнике, лежащей на поверхности прозрачной бирюзового цвета воды" width="270" height="270"></p>
+          </li>
+
+          <li class="companions__item">
+            <h3><a href="#">Петя Демин</a></h3>
+            <div class="countries">
+              <p class="countries__label">хочет посетить</p>
+              <ul class="countries__list">
+                <li class="countries__item"><img src="#" alt="Пользователь планирует посетить Королевство Бельгия" width="35" height="24"></li>
+                <li class="countries__item"><img src="#" alt="Пользователь планирует посетить Республику Чехия" width="35" height="24"></li>
+              </ul>
+            </div>
+            <div class="hobby">
+              <p class="hobby__label">увлечения</p>
+              <ul class="hobby__list">
+                <li class="hobby__item"><a class="hobby__link" href="#">#бургер</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#бар</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#футбол</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#концерт</a></li>
+                <li class="hobby__item"><a class="hobby__link" href="#">#крафт</a></li>
+              </ul>
+            </div>
+            <div class="transport">
+              <p class="transport__label">транспорт</p>
+              <ul class="transport__list">
+                <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать на самолете" width="19" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать на машине" width="17" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать на велосипеде" width="24" height="21"></li>
+                <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать пешком" width="20" height="21"></li>
+              </ul>
+            </div>
+            <p class="avatar"><img src="#" alt="Изображение Пети Демина со стильно подстриженными рыжеватыми усами и бородой, в темной вязаной шапке и того же цвета пуловере, на размытом фоне заснеженных гор и леса" width="270" height="270"></p>
+          </li>
+        </ul>
+        <a class="companions__all-link" href="#">Показать всех</a>
+      </section>
+
+      <section class="profile">
+        <h2><a href="#">Добавьте свой профиль</a></h2>
+        <p><img src="#" alt="Изображение формы в виде окружности с серым фоном под аватар пользователя" width="99" height="99"></p>
+        <ol class="base-rates">
+          <li class="base-rates__item">
+            <p>Базовое размещение</p>
+            <p>Бесплатно</p>
+          </li>
+          <li class="base-rates__item">
+            <p>Вывод на первых позициях</p>
+            <p>99 руб./мес</p>
+          </li>
+          <li class="base-rates__item">
+            <p>Кастомный цвет карточки</p>
+            <p>59 руб./мес</p>
+          </li>
+        </ol>
+        <a class="business-rates__link" href="#">Показать тарифы для бизнеса</a>
+      </section>
+
+      <section class="registration">
+        <h2 class="registration__title">Заинтересовались?</h2>
+        <p>Зарегистрируйтесь, это быстро и бесплатно!
+          Уже зарегистрированы? Тогда <span><a href="#">авторизуйтесь</a></span>.</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <input type="email" name="email" placeholder="E-mail">
+          <button type="submit">Отправить</button>
+        </form>
+        <p>Остались вопросы?</p>
+        <p>Мы с радостью на них ответим!</p>
+        <ul class="contacts">
+          <li class="contacts_item">
+            <a class="contacts_link" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts_item">
+            <a class="contacts_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </section>
+
+       <section class="address">
+        <h2 class="address__title">Местонахождение офиса компании - Погнали</h2>
+        <address class="address__info">ул. Большая Конюшенная, 19/8</address>
+        <a class="address__link" href="#">Проложить маршрут</a>
+        <p class="address__map"><img src="#" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="320" height="546"></p>
+       </section>
+
+    </main>
+
+    <footer>
+
+      <p class="logo">
+        <a class="logo__link"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
+      </p>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Facebook" width="11" height="21"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети VK" width="23" height="12"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Instagram" width="18" height="18"></a>
+        </li>
+      </ul>
+
+      <div class="web-develop">
+        <p class="web-develop__text">Разработано</p>
+        <a class="web-develop_link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип HTML Academy" width="27" height="34"></a>
+      </div>
+
+    </footer>
+
+    <section class="business-rates">
+      <h2>Бизнес-тарифы</h2>
+      <ul class="business-rates__list">
+        <li class="business-rates__item">
+          <p>Реклама у блоггера</p>
+          <p>300 000 руб./пост</p>
+        </li>
+        <li class="business-rates__item">
+          <p>Накрутка подписчиков</p>
+          <p>от 1 руб./шт.</p>
+        </li>
+        <li class="business-rates__item">
+          <p>Лайки от ботов</p>
+          <p>от 20 коп./лайк</p>
+        </li>
+        <li class="business-rates__item">
+          <p>Ваш продакт-плейсмент</p>
+          <p>Индивидуально</p>
+        </li>
+      </ul>
+      <button type="button">Закрыть окно</button>
+    </section>
 
   </body>
 </html>
