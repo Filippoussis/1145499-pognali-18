@@ -7,13 +7,14 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
 
-      <p class="logo">
+      <p class="logo header__logo">
         <a class="logo__link"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
       </p>
 
       <nav class="nav">
+        <a class="nav__button" href="#"></a>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">О сервисе</a>
@@ -27,8 +28,8 @@
         </ul>
       </nav>
 
-      <p class="authorization">
-        <a class="authorization__link" href="#">Авторизация</a>
+      <p class="authorize">
+        <a class="authorize__link" href="#">Авторизация</a>
       </p>
 
       <ul class="contacts">
@@ -56,7 +57,9 @@
 
     <main>
 
-      <h1>В путешествие с крутыми попутчиками!</h1>
+      <h1 class="index-title">В путешествие с крутыми попутчиками!</h1>
+
+      <p class="bunner-pognali"><img src="#" alt="Изображен собирательный образ путешественника - силуэт человека с чемоданом" width="192" height="255"></p>
 
       <ul class="feedback">
         <li class="feedback__item">
@@ -70,65 +73,65 @@
         </li>
       </ul>
 
-      <aside class="comment">
-        <h2>Реальные отзывы от реальных пользователей приложения</h2>
-        <p>&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
-        <p>Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</p>
-      </aside>
+      <section class="comment">
+        <h2 class="comment__title">Реальные отзывы от реальных пользователей приложения</h2>
+        <p class="comment__text">&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
+        <p class="comment__text">Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</p>
+      </section>
 
-      <aside class="recommendation">
-        <h2>Рекомендации к использованию приложения</h2>
-        <ol class="recommendation__list">
-          <li class="recommendation__item">Выберите направление</li>
-          <li class="recommendation__item">Изучите идеи путешественников</li>
-          <li class="recommendation__item">Находите тех, кто похож на вас</li>
-          <li class="recommendation__item">Путешествуйте вместе!</li>
+      <section class="recommend">
+        <h2 class="recommend__title">Рекомендации к использованию приложения</h2>
+        <ol class="recommend__list">
+          <li class="recommend__item">Выберите направление</li>
+          <li class="recommend__item">Изучите идеи путешественников</li>
+          <li class="recommend__item">Находите тех, кто похож на вас</li>
+          <li class="recommend__item">Путешествуйте вместе!</li>
         </ol>
-      </aside>
+      </section>
 
       <section class="about">
         <h2 class="about__title">О сервисе</h2>
-        <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+        <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p>А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
+        <p class="about__text">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
       </section>
 
       <section class="trend">
         <h2 class="trend__title">Направления</h2>
-        <p>Мы не продаем туры и ничего не рекламируем.
+        <p class="trend__description">Мы не продаем туры и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться
           и чем можно там заняться.</p>
         <ul class="trend__list">
-          <li class="trend__item">
-            <h3>Тайланд</h3>
-            <p>Джунгли зовут!</p>
-            <span>18321</span>
-            <p><img src="#" alt="Изображение Тайланда"></p>
+          <li class="trend-item trend__item">
+            <h3 class="trend-item__title">Тайланд</h3>
+            <p class="trend-item__slogan">Джунгли зовут!</p>
+            <span class="trend-item__traffic">18321</span>
+            <p class="trend-item__picture"><img src="#" alt="Изображение Тайланда"></p>
           </li>
-          <li class="trend__item">
-            <h3>Франция</h3>
-            <p>Трэ бьен, манифик!</p>
-            <span>12518</span>
-            <p><img src="#" alt="Изображение Франции"></p>
+          <li class="trend-item trend__item">
+            <h3 class="trend-item__title">Франция</h3>
+            <p class="trend-item__slogan">Трэ бьен, манифик!</p>
+            <span class="trend-item__traffic">12518</span>
+            <p class="trend-item__picture"><img src="#" alt="Изображение Франции"></p>
           </li>
-          <li class="trend__item">
-            <h3>Чехия</h3>
-            <p>Закоулки старой Европы</p>
-            <span>5326</span>
-            <p><img src="#" alt="Изображение Чехии"></p>
+          <li class="trend-item trend__item">
+            <h3 class="trend-item__title">Чехия</h3>
+            <p class="trend-item__slogan">Закоулки старой Европы</p>
+            <span class="trend-item__traffic">5326</span>
+            <p class="trend-item__picture"><img src="#" alt="Изображение Чехии"></p>
           </li>
         </ul>
-        <a class="trend__all-link" href="#">Показать все</a>
+        <a class="trend__link" href="#">Показать все</a>
       </section>
 
       <section class="companions">
         <h2 class="companions__title">Попутчики</h2>
-        <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+        <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p>Теперь можно легко найти единомышлиннков!</p>
+        <p class="companions__description">Теперь можно легко найти единомышлиннков!</p>
         <ul class="companions__list">
-          <li class="companions__item">
-            <h3><a href="#">Таня Фирсова</a></h3>
+          <li class="companions-item companions__item">
+            <h3 class="companions-item__title"><a class="companions-item__link" href="#">Таня Фирсова</a></h3>
             <div class="countries">
               <p class="countries__label">хочет посетить</p>
               <ul class="countries__list">
@@ -157,11 +160,11 @@
                 <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="20" height="21"></li>
               </ul>
             </div>
-            <p class="avatar"><img src="#" alt="Изображение прекрасной Тани Фирсовой с золотистой от солнца кожей и в ярком купальнике, лежащей на поверхности прозрачной бирюзового цвета воды" width="270" height="270"></p>
+            <p class="companions-item__avatar"><img src="#" alt="Изображение прекрасной Тани Фирсовой с золотистой от солнца кожей и в ярком купальнике, лежащей на поверхности прозрачной бирюзового цвета воды" width="270" height="270"></p>
           </li>
 
-          <li class="companions__item">
-            <h3><a href="#">Петя Демин</a></h3>
+          <li class="companions-item companions__item">
+            <h3 class="companions-item__title"><a class="companions-item__link" href="#">Петя Демин</a></h3>
             <div class="countries">
               <p class="countries__label">хочет посетить</p>
               <ul class="countries__list">
@@ -188,48 +191,76 @@
                 <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать пешком" width="20" height="21"></li>
               </ul>
             </div>
-            <p class="avatar"><img src="#" alt="Изображение Пети Демина со стильно подстриженными рыжеватыми усами и бородой, в темной вязаной шапке и того же цвета пуловере, на размытом фоне заснеженных гор и леса" width="270" height="270"></p>
+            <p class="companions-item__avatar"><img src="#" alt="Изображение Пети Демина со стильно подстриженными рыжеватыми усами и бородой, в темной вязаной шапке и того же цвета пуловере, на размытом фоне заснеженных гор и леса" width="270" height="270"></p>
           </li>
         </ul>
-        <a class="companions__all-link" href="#">Показать всех</a>
+        <a class="companions__link" href="#">Показать всех</a>
       </section>
 
       <section class="profile">
-        <h2><a href="#">Добавьте свой профиль</a></h2>
-        <p><img src="#" alt="Изображение формы в виде окружности с серым фоном под аватар пользователя" width="99" height="99"></p>
-        <ol class="base-rates">
-          <li class="base-rates__item">
-            <p>Базовое размещение</p>
-            <p>Бесплатно</p>
-          </li>
-          <li class="base-rates__item">
-            <p>Вывод на первых позициях</p>
-            <p>99 руб./мес</p>
-          </li>
-          <li class="base-rates__item">
-            <p>Кастомный цвет карточки</p>
-            <p>59 руб./мес</p>
-          </li>
-        </ol>
-        <a class="business-rates__link" href="#">Показать тарифы для бизнеса</a>
+        <h2 class="profile__title"><a class="profile__link" href="#">Добавьте свой профиль</a></h2>
+        <p class="profile__avatar"><img src="#" alt="Изображение формы в виде окружности с серым фоном под аватар пользователя" width="99" height="99"></p>
+        <section class="base-rates">
+          <h2 class="base-rates__title">Базовые-тарифы</h2>
+          <ol class="base-rates__list">
+            <li class="base-rates__item">
+              <p class="base-rates__text">Базовое размещение</p>
+              <p class="base-rates__text">Бесплатно</p>
+            </li>
+            <li class="base-rates__item">
+              <p class="base-rates__text">Вывод на первых позициях</p>
+              <p class="base-rates__text">99 руб./мес</p>
+            </li>
+            <li class="base-rates__item">
+              <p class="base-rates__text">Кастомный цвет карточки</p>
+              <p class="base-rates__text">59 руб./мес</p>
+            </li>
+          </ol>
+        </section>
+
+        <a class="business-rates-link" href="#">Показать тарифы для бизнеса</a>
+
+        <section class="business-rates">
+          <h2 class="business-rates__title">Бизнес-тарифы</h2>
+          <ul class="business-rates__list">
+            <li class="business-rates__item">
+              <p class="business-rates__text">Реклама у блоггера</p>
+              <p class="business-rates__text">300 000 руб./пост</p>
+            </li>
+            <li class="business-rates__item">
+              <p class="business-rates__text">Накрутка подписчиков</p>
+              <p class="business-rates__text">от 1 руб./шт.</p>
+            </li>
+            <li class="business-rates__item">
+              <p class="business-rates__text">Лайки от ботов</p>
+              <p class="business-rates__text">от 20 коп./лайк</p>
+            </li>
+            <li class="business-rates__item">
+              <p class="business-rates__text">Ваш продакт-плейсмент</p>
+              <p class="business-rates__text">Индивидуально</p>
+            </li>
+          </ul>
+          <button class="business-rates__button" type="button">Закрыть окно</button>
+        </section>
+
       </section>
 
-      <section class="registration">
-        <h2 class="registration__title">Заинтересовались?</h2>
-        <p>Зарегистрируйтесь, это быстро и бесплатно!
+      <section class="reg">
+        <h2 class="reg__title">Заинтересовались?</h2>
+        <p class="reg__description">Зарегистрируйтесь, это быстро и бесплатно!
           Уже зарегистрированы? Тогда <span><a href="#">авторизуйтесь</a></span>.</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <input type="email" name="email" placeholder="E-mail">
-          <button type="submit">Отправить</button>
+        <form class="reg__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="reg__input" type="email" name="email" placeholder="E-mail">
+          <button class="reg__button" type="submit">Отправить</button>
         </form>
-        <p>Остались вопросы?</p>
-        <p>Мы с радостью на них ответим!</p>
+        <p class="reg__text">Остались вопросы?</p>
+        <p class="reg__text">Мы с радостью на них ответим!</p>
         <ul class="contacts">
-          <li class="contacts_item">
-            <a class="contacts_link" href="tel:88005558628">8 800 555-86-28</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
           </li>
-          <li class="contacts_item">
-            <a class="contacts_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </section>
@@ -243,9 +274,9 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
-      <p class="logo">
+      <p class="logo footer__logo">
         <a class="logo__link"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
       </p>
 
@@ -261,35 +292,12 @@
         </li>
       </ul>
 
-      <div class="web-develop">
-        <p class="web-develop__text">Разработано</p>
-        <a class="web-develop_link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип HTML Academy" width="27" height="34"></a>
+      <div class="web-dev">
+        <p class="web-dev__text">Разработано</p>
+        <a class="web-dev__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип HTML Academy" width="27" height="34"></a>
       </div>
 
     </footer>
-
-    <section class="business-rates">
-      <h2>Бизнес-тарифы</h2>
-      <ul class="business-rates__list">
-        <li class="business-rates__item">
-          <p>Реклама у блоггера</p>
-          <p>300 000 руб./пост</p>
-        </li>
-        <li class="business-rates__item">
-          <p>Накрутка подписчиков</p>
-          <p>от 1 руб./шт.</p>
-        </li>
-        <li class="business-rates__item">
-          <p>Лайки от ботов</p>
-          <p>от 20 коп./лайк</p>
-        </li>
-        <li class="business-rates__item">
-          <p>Ваш продакт-плейсмент</p>
-          <p>Индивидуально</p>
-        </li>
-      </ul>
-      <button type="button">Закрыть окно</button>
-    </section>
 
   </body>
 </html>
