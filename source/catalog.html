@@ -67,14 +67,26 @@
       <section class="countries-filter">
        <div class="countries-filter__header">
          <h2 class="countries-filter__title">Фильтрация по странам</h2>
-         <button class="countries-filter__button" type="button">Закрыть</button>
+         <p class="countries-filter__button"><button class="button-close" type="button">Закрыть</button></p>
        </div>
        <div class="countries-filter__main">
         <ul class="continent">
-          <li class="continent__item"><a class="continent__link" href="#">Европа</a></li>
-          <li class="continent__item"><a class="continent__link" href="#">Азия</a></li>
-          <li class="continent__item"><a class="continent__link" href="#">Америка</a></li>
-          <li class="continent__item"><a class="continent__link" href="#">Острова</a></li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="europe" checked>
+            <label for="europe">Европа</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="asia">
+            <label for="asia">Азия</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="america">
+            <label for="america">Америка</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="islands">
+            <label for="islands">Острова</label>
+          </li>
         </ul>
         <table class="countries-filter__table">
           <tr class="countries-filter__row">
@@ -199,7 +211,7 @@
             </td>
           </tr>
         </table>
-        <button class="countries-filter__button" type="button">Свернуть</button>
+        <p class="button-catalog"><button class="button-catalog__close" type="button">Свернуть</button></p>
       </div>
     </section>
 
@@ -227,7 +239,7 @@
           <legend class="filter-music__title">Музыка</legend>
           <ul class="filter-music__list">
             <li class="filter-music__item">
-              <input type="checkbox" name="music" id="heavy-rock">
+              <input type="checkbox" name="music" id="heavy-rock" checked>
               <label class="filter-music__label" for="heavy-rock">Тяжелый рок</label>
             </li>
             <li class="filter-music__item">
@@ -297,7 +309,7 @@
           </div>
         </fieldset>
 
-        <button class="companions-filter__button" type="button">Показать</button>
+        <p class="button-catalog"><button class="button-catalog__filter" type="button">Показать</button></p>
 
       </form>
 
@@ -351,11 +363,11 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <p class="level__value"><img src="#" alt="Рейтинг путешественника Тани Фирсовой = 99"></p>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">99</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
@@ -396,11 +408,11 @@
                   <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Пети Демина = 80"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">80</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
@@ -445,11 +457,11 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Марка Смолова = 25"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">25</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
@@ -489,16 +501,16 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Ларисы Роговой = 50"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">50</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
         </ul>
 
-        <p><a class="companions__link" href="#">Показать еще</a></p>
+        <p class="companion__button"><a class="companions__link" href="#">Показать еще</a></p>
 
         <ul class="pagination">
           <li class="pagination__item"><a class="pagination__link" href="#">prev</a></li>
