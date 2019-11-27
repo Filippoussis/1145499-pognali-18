@@ -5,69 +5,327 @@
     <title>Погнали? - приложение для поиска попутчиков в ваше путешествие!</title>
   </head>
   <body>
-    <header>
+    <header class="header">
 
-      <p class="logo">
-        <a class="logo__link" href="index.html"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
-      </p>
+      <div class="main-header">
+        <p class="logo">
+          <a class="logo__link" href="index.html"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
+        </p>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">О сервисе</a>
+        <p class="hamburger">
+          <a class="hamburger__link" href="#"><img src="#" alt="Иконка раскрывающегося меню типа 'гамбургер'" width="25" height="11"></a>
+        </p>
+      </div>
+
+      <div class="main-menu">
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">О сервисе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="authorization">
+          <a class="authorization__link" href="#">Авторизация</a>
+        </p>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Направления</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link">Попутчики</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-      </nav>
 
-      <p class="authorization">
-        <a class="authorization__link" href="#">Авторизация</a>
-      </p>
-
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:88005558628">8 800 555-86-28</a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Facebook" width="11" height="21"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети VK" width="23" height="12"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Instagram" width="18" height="18"></a>
-        </li>
-      </ul>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Facebook" width="11" height="21"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети VK" width="23" height="12"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#"><img src="#" alt="Иконка социальной сети Instagram" width="18" height="18"></a>
+          </li>
+        </ul>
+      </div>
 
     </header>
     <main>
 
-      <h1>Попутчики</h1>
+      <h1 class="catalog-title">Попутчики</h1>
 
-      <!--Фильтр по странам-->
-      <!--Фильтр по попутчикам-->
+      <section class="countries-filter">
+       <div class="countries-filter__header">
+         <h2 class="countries-filter__title">Фильтрация по странам</h2>
+         <p class="countries-filter__button"><button class="button-close" type="button">Закрыть</button></p>
+       </div>
+       <div class="countries-filter__main">
+        <ul class="continent">
+          <li class="continent__item">
+            <input type="radio" name="continent" id="europe" checked>
+            <label for="europe">Европа</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="asia">
+            <label for="asia">Азия</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="america">
+            <label for="america">Америка</label>
+          </li>
+          <li class="continent__item">
+            <input type="radio" name="continent" id="islands">
+            <label for="islands">Острова</label>
+          </li>
+        </ul>
+        <table class="countries-filter__table">
+          <tr class="countries-filter__row">
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter1" checked>
+              <label class="countries-filter__label" for="letter1">А</label>
+              <ul class="countries-filter__list">
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Афганистан</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Албания</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Алжир</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Андорра</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Аргентина</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Армения</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Австралия</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Австралия</a></li>
+                <li class="countries-filter__item"><a class="countries-filter__link" href="#">Азербайджан</a></li>
+              </ul>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter2">
+              <label class="countries-filter__label" for="letter2">Б</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter3">
+              <label class="countries-filter__label" for="letter3">В</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter4">
+              <label class="countries-filter__label" for="letter4">Г</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter5">
+              <label class="countries-filter__label" for="letter5">Д</label>
+            </td>
+          </tr>
+          <tr class="countries-filter__row">
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter6">
+              <label class="countries-filter__label" for="letter6">Е</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter7">
+              <label class="countries-filter__label" for="letter7">З</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter8">
+              <label class="countries-filter__label" for="letter8">И</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter9">
+              <label class="countries-filter__label" for="letter9">К</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter10">
+              <label class="countries-filter__label" for="letter10">Л</label>
+            </td>
+          </tr>
+          <tr class="countries-filter__row">
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter11">
+              <label class="countries-filter__label" for="letter11">М</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter12">
+              <label class="countries-filter__label" for="letter12">Н</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter13">
+              <label class="countries-filter__label" for="letter13">О</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter14">
+              <label class="countries-filter__label" for="letter14">П</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter15">
+              <label class="countries-filter__label" for="letter15">Р</label>
+            </td>
+          </tr>
+          <tr class="countries-filter__row">
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter16">
+              <label class="countries-filter__label" for="letter16">С</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter17">
+              <label class="countries-filter__label" for="letter17">Т</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter18">
+              <label class="countries-filter__label" for="letter18">У</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter19">
+              <label class="countries-filter__label" for="letter19">Ф</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter20">
+              <label class="countries-filter__label" for="letter20">Х</label>
+            </td>
+          </tr>
+          <tr class="countries-filter__row">
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter21">
+              <label class="countries-filter__label" for="letter21">Ч</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter22">
+              <label class="countries-filter__label" for="letter22">Ш</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter23">
+              <label class="countries-filter__label" for="letter23">Э</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter24">
+              <label class="countries-filter__label" for="letter24">Ю</label>
+            </td>
+            <td class="countries-filter__data">
+              <input type="radio" name="letter" id="letter25">
+              <label class="countries-filter__label" for="letter25">Я</label>
+            </td>
+          </tr>
+        </table>
+        <p class="button-catalog"><button class="button-catalog__close" type="button">Свернуть</button></p>
+      </div>
+    </section>
 
-      <section>
+    <section class="companions-filter">
+      <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+      <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="filter-hobby">
+          <legend class="filter-hobby__title">Хобби</legend>
+          <ul class="filter-hobby__list">
+            <li class="filter-hobby__item">
+              <input type="checkbox" name="hobby" id="sport">
+              <label class="filter-hobby__label" for="sport">Спорт</label>
+            </li>
+            <li class="filter-hobby__item">
+              <input type="checkbox" name="hobby" id="web-develop">
+              <label class="filter-hobby__label" for="web-develop">Веб-разработка</label>
+            </li>
+            <li class="filter-hobby__item">
+               <input type="checkbox" name="hobby" id="tourism">
+               <label class="filter-hobby__label" for="tourism">Туризм</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-music">
+          <legend class="filter-music__title">Музыка</legend>
+          <ul class="filter-music__list">
+            <li class="filter-music__item">
+              <input type="checkbox" name="music" id="heavy-rock" checked>
+              <label class="filter-music__label" for="heavy-rock">Тяжелый рок</label>
+            </li>
+            <li class="filter-music__item">
+              <input type="checkbox" name="music" id="russian-rap">
+              <label class="filter-music__label" for="russian-rap">Русский рэп</label>
+            </li>
+            <li class="filter-music__item">
+              <input type="checkbox" name="music" id="euro-dance">
+              <label class="filter-music__label" for="euro-dance">Евроденс</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-food">
+          <legend class="filter-food__title">Еда</legend>
+          <ul class="filter-food__list">
+            <li class="filter-food__item">
+              <input type="checkbox" name="food" id="fruit">
+              <label class="filter-food__label" for="sport">Фрукты</label>
+            </li>
+            <li class="filter-food__item">
+              <input type="checkbox" name="food" id="vegetables">
+              <label class="filter-food__label" for="web-develop">Овощи</label>
+            </li>
+            <li class="filter-food__item">
+               <input type="checkbox" name="food" id="chicken">
+               <label class="filter-food__label" for="tourism">Курица</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-transport">
+          <legend class="filter-transport__title">Транспорт</legend>
+          <ul class="filter-transport__list">
+            <li class="filter-transport__item">
+              <input type="checkbox" name="transport" id="plane" checked>
+              <label class="filter-transport__label" for="plane">
+                <img src="#" alt="Пользователь предпочитает путешествовать на самолете" width="14" height="16">
+              </label>
+            </li>
+            <li class="filter-transport__item">
+              <input type="checkbox" name="transport" id="car" checked>
+              <label class="filter-transport__label" for="car">
+                <img src="#" alt="Пользователь предпочитает путешествовать на автомобиле" width="13" height="16">
+              </label>
+            </li>
+            <li class="filter-transport__item">
+              <input type="checkbox" name="transport" id="bicycle">
+              <label class="filter-transport__label" for="bicycle">
+                <img src="#" alt="Пользователь предпочитает путешествовать на велосипеде" width="19" height="17">
+              </label>
+            </li>
+            <li class="filter-transport__item">
+              <input type="checkbox" name="transport" id="afoot" checked>
+              <label class="filter-transport__label" for="afoot">
+                <img src="#" alt="Пользователь предпочитает путешествовать пешком" width="15" height="17">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-level">
+          <legend class="filter-level__title">Левел</legend>
+          <div class="filter-level__wrapper">
+            <input type="text" value="30">
+            <input type="text" value="100">
+          </div>
+          <div class="filter-level__scale">
+            <div class="filter-level__bar"></div>
+          </div>
+        </fieldset>
 
-        <h2>Список попутчиков</h2>
+        <p class="button-catalog"><button class="button-catalog__filter" type="button">Показать</button></p>
 
-        <ul>
-          <li>
+      </form>
+
+    </section>
+
+
+      <section class="companions">
+
+        <h2 class="companions__title">Список попутчиков</h2>
+
+        <ul class="companions__list">
+          <li class="companions__item">
             <article class="companion">
-              <h2><a href="#">Таня Фирсова</a></h2>
-              <p>1,5 M<span>&nbsp;likes</span></p>
-              <p><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
+              <h2 class="companion__title"><a class="companion__link" href="#">Таня Фирсова</a></h2>
+              <p class="companion__likes">1,5 M<span>&nbsp;likes</span></p>
+              <p class="companion__avatar"><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
               <div class="hobby">
                 <p class="hobby__label">увлечения</p>
                 <ul class="hobby__list">
@@ -83,16 +341,16 @@
                 <p class="countries__label">хочет посетить</p>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Республику Шри-Ланка" width="26" height="18">
-                    <p>ШРИ-ЛАНКА</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Республику Шри-Ланка" width="26" height="18"></p>
+                    <p class="countries__name">ШРИ-ЛАНКА</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Королевство Тайланд" width="26" height="18">
-                    <p>ТАЙЛАНД</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Королевство Тайланд" width="26" height="18"></p>
+                    <p class="countries__name">ТАЙЛАНД</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Республику Сейшельские острова" width="26" height="18">
-                    <p>СЕЙШЕЛЫ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Республику Сейшельские острова" width="26" height="18"></p>
+                    <p class="countries__name">СЕЙШЕЛЫ</p>
                   </li>
                 </ul>
               </div>
@@ -105,19 +363,19 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <p class="level__value"><img src="#" alt="Рейтинг путешественника Тани Фирсовой = 99"></p>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">99</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
-          <li>
+          <li class="companions__item">
             <article class="companion">
-              <h2><a href="#">Петя Демин</a></h2>
-              <p>150<span>&nbsp;likes</span></p>
-              <p><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
+              <h2 class="companion__title"><a class="companion__link" href="#">Петя Демин</a></h2>
+              <p class="companion__likes">150<span>&nbsp;likes</span></p>
+              <p class="companion__avatar"><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
               <div class="hobby">
                 <p class="hobby__label">увлечения</p>
                 <ul class="hobby__list">
@@ -132,12 +390,12 @@
                 <p class="countries__label">хочет посетить</p>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Королевство Бельгия" width="26" height="18">
-                    <p>БЕЛЬГИЯ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Королевство Бельгия" width="26" height="18"></p>
+                    <p class="countries__name">БЕЛЬГИЯ</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Республику Чехия" width="26" height="18">
-                    <p>ЧЕХИЯ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Республику Чехия" width="26" height="18"></p>
+                    <p class="countries__name">ЧЕХИЯ</p>
                   </li>
                 </ul>
               </div>
@@ -150,19 +408,19 @@
                   <li class="transport__item"><img src="#" alt="Пользователь предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Пети Демина = 80"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">80</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
-          <li>
+          <li class="companions__item">
             <article class="companion">
-              <h2><a href="#">Марк Смолов</a></h2>
-              <p>1700<span>&nbsp;likes</span></p>
-              <p><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
+              <h2 class="companion__title"><a class="companion_link" href="#">Марк Смолов</a></h2>
+              <p class="companion_likes">1700<span>&nbsp;likes</span></p>
+              <p class="companion__avatar"><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
               <div class="hobby">
                 <p class="hobby__label">увлечения</p>
                 <ul class="hobby__list">
@@ -177,16 +435,16 @@
                 <p class="countries__label">хочет посетить</p>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Соединенные Штаты Америки" width="26" height="18">
-                    <p>США</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Соединенные Штаты Америки" width="26" height="18"></p>
+                    <p class="countries__name">США</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Австралийский Союз" width="26" height="18">
-                    <p>АВСТРАЛИЯ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Австралийский Союз" width="26" height="18"></p>
+                    <p class="countries__name">АВСТРАЛИЯ</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Доминиканскую Республику" width="26" height="18">
-                    <p>ДОМИНИКАНА</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Доминиканскую Республику" width="26" height="18"></p>
+                    <p class="countries__name">ДОМИНИКАНА</p>
                   </li>
                 </ul>
               </div>
@@ -199,19 +457,19 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Марка Смолова = 25"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">25</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
 
-          <li>
+          <li class="companions__item">
             <article class="companion">
-              <h2><a href="#">Лариса Роговая</a></h2>
-              <p>23<span>&nbsp;likes</span></p>
-              <p><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
+              <h2 class="companion__title"><a class="companion__link" href="#">Лариса Роговая</a></h2>
+              <p class="companion__likes">23<span>&nbsp;likes</span></p>
+              <p class="companion__avatar"><img src="#" alt="Аватар путешественника" width="70" height="70"></p>
               <div class="hobby">
                 <p class="hobby__label">увлечения</p>
                 <ul class="hobby__list">
@@ -225,12 +483,12 @@
                 <p class="countries__label">хочет посетить</p>
                 <ul class="countries__list">
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Соединенное Королевство Великобритания" width="26" height="18">
-                    <p>ВЕЛИКОБРИТАНИЯ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Соединенное Королевство Великобритания" width="26" height="18"></p>
+                    <p class="countries__name">ВЕЛИКОБРИТАНИЯ</p>
                   </li>
                   <li class="countries__item">
-                    <img src="#" alt="Пользователь планирует посетить Федеративную Республику Германия" width="26" height="18">
-                    <p>ГЕРМАНИЯ</p>
+                    <p class="countries__flag"><img src="#" alt="Пользователь планирует посетить Федеративную Республику Германия" width="26" height="18"></p>
+                    <p class="countries__name">ГЕРМАНИЯ</p>
                   </li>
                 </ul>
               </div>
@@ -243,16 +501,16 @@
                   <li class="transport__item"><img src="#" alt="Пользователь НЕ предпочитает путешествовать пешком" width="15" height="17"></li>
                 </ul>
               </div>
-              <div class="level">
-                <p class="level__label">левел</p>
-                <div class="level__value"><img src="#" alt="Рейтинг путешественника Ларисы Роговой = 50"></div>
-              </div>
-              <p><a class="companion__link" href="#">Позвать</a></p>
+              <p class="level">
+                <span class="level__label">левел</span>
+                <span class="level__value">50</span>
+              </p>
+              <p class="companion__button"><a class="companion__link" href="#">Позвать</a></p>
             </article>
           </li>
         </ul>
 
-        <p><a class="companions__all-link" href="#">Показать еще</a></p>
+        <p class="companion__button"><a class="companions__link" href="#">Показать еще</a></p>
 
         <ul class="pagination">
           <li class="pagination__item"><a class="pagination__link" href="#">prev</a></li>
@@ -263,7 +521,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
       <p class="logo">
         <a class="logo__link" href="index.html"><img src="#" alt="Логотип - Погнали" width="96" height="15"></a>
