@@ -1,0 +1,24 @@
+.rates {
+  &--business {
+    background-color: #ffffff;
+  }
+}
+
+.rates__title {
+  color: #ff8d30;
+}
+
+.rates__list {
+  padding: 0;
+  list-style: none;
+}
+
+.rates__text {
+  color: #444444;
+}
+
+.rates__link {
+  text-decoration: none;
+  color: #192144;
+}
+

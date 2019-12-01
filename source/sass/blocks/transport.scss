@@ -1,0 +1,14 @@
+.transport__list {
+  padding: 0;
+  list-style: none;
+}
+
+.transport__icon {
+  fill: #d9d9d9;
+  &--active {
+    fill: #1d2e5b;
+  }
+}
+
+
+

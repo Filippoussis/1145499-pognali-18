@@ -1,0 +1,26 @@
+.companions {
+  background-color: #192144;
+  &--catalog {
+    background-color: #edeff6;
+  }
+}
+
+.companions__title {
+  color: #ff8d30;
+}
+
+.companions__text {
+  color: #ffffff;
+}
+
+.companions__list {
+  padding: 0;
+  list-style: none;
+}
+
+.companions__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
