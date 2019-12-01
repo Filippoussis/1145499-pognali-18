@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  &--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffd74b;
+  }
+}
+
+.socials__icon {
+  fill: #cccccc;
+  &--footer {
+    fill: #1d2e5b;
+  }
+}
+
