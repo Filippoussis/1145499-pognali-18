@@ -1,0 +1,15 @@
+.form-transport {
+  border: solid 1px #cbced9;
+  border-radius: 10px;
+}
+
+.form-transport__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.form-transport__list {
+  @include list-reset;
+}
+

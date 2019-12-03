@@ -1,0 +1,14 @@
+.continents__list {
+  @include list-reset;
+}
+
+.continents__label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(25, 33, 68, 0.3);
+}
+
+.continents__input:checked ~ label {
+  color: #192144;
+}
+

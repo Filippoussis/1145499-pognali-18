@@ -1,0 +1,31 @@
+.plan-date {
+  border: none;
+}
+
+.plan-date__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.plan-date__desc {
+  font-weight: 400;
+}
+
+.plan-date__text {
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  &--desc {
+    color: #1d2e5b;
+  }
+  &--value {
+    color: rgba(29, 46, 91, 0.3)
+  }
+}
+
+.plan-date__children-label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+}

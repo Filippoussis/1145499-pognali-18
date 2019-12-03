@@ -1,0 +1,21 @@
+.form-plan {
+  padding: 30px 25px;
+  background-color: #d4d9eb;
+}
+
+.form-plan__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.form-plan__list {
+  @include list-reset;
+}
+
+.form-plan__item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}

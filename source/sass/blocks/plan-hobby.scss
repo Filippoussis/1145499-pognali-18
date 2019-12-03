@@ -1,0 +1,34 @@
+.plan-hobby {
+  border: none;
+}
+
+.plan-hobby__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.plan-hobby_desc {
+  font-weight: 400;
+}
+
+.plan-hobby__list {
+  @include list-reset;
+}
+
+.plan-hobby__country {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+}
+
+.plan-hobby__text {
+  font-weight: 400;
+  &--default {
+    color: rgba(68, 68, 68, 0.3)
+  }
+  &--active {
+    color: #444444;
+  }
+}

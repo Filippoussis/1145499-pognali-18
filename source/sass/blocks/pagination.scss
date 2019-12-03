@@ -6,8 +6,7 @@
 }
 
 .pagination__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
   background-color: #ffffff;
 }
 

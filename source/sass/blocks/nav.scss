@@ -1,15 +1,14 @@
 
 .nav__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .nav__link {
   display: block;
   font-size: 30px;
-  line-height: 36px;
+  font-weight: 500;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   color: #192144;
 }

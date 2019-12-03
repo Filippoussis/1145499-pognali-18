@@ -1,0 +1,44 @@
+.form-myplans {
+  padding: 29px 26px;
+  background-color: #dfe3f0;
+}
+
+.form-myplans__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.form-myplans__list {
+  @include list-reset;
+}
+
+.form-myplans__item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.form-myplans__text {
+  color: #1d2e5b;
+  &--country {
+    font-weight: 700;
+  }
+  &--companions,
+  &--date {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+}
+
+.form-myplans__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: rgba(0, 0, 0, 0.3);
+}
