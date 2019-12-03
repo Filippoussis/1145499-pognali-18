@@ -1,0 +1,22 @@
+.filter-group {
+  border: none;
+}
+
+.filter-group__title {
+  font-weight: 700;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.filter-group__list {
+  @include list-reset;
+}
+
+.filter-group__label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  color: #444444;
+}
+

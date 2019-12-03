@@ -14,13 +14,13 @@
 }
 
 .companions__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .companions__item {
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
+  background-color: #ffffff;
 }
 

@@ -1,3 +1,6 @@
+@import "mixins.scss";
+@import "normalize.scss";
+@import "global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/index-link.scss";
 @import "blocks/button.scss";
@@ -30,3 +33,18 @@
 @import "blocks/address.scss";
 @import "blocks/web-dev.scss";
 @import "blocks/pagination.scss";
+@import "blocks/filter-countries.scss";
+@import "blocks/continents.scss";
+@import "blocks/countries-alphabet.scss";
+@import "blocks/filter-companions.scss";
+@import "blocks/filter-group.scss";
+@import "blocks/form-personaly.scss";
+@import "blocks/form-avatar.scss";
+@import "blocks/form-tags.scss";
+@import "blocks/form-transport.scss";
+@import "blocks/form-myplans.scss";
+@import "blocks/form-plan.scss";
+@import "blocks/plan-date.scss";
+@import "blocks/plan-route.scss";
+@import "blocks/plan-hobby.scss";
+

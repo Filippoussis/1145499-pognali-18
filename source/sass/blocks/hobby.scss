@@ -1,9 +1,8 @@
 .hobby__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .hobby__link {
-  text-decoration: none;
+  line-height: 1.13;
   color: #444444;
 }

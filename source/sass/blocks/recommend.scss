@@ -1,12 +1,14 @@
 .recommend__list {
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .recommend__text {
   margin: 0;
   padding: 25px;
   border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
   color: #161c35;
   &--1 {
     background-color: #ff8d30;
