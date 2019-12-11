@@ -8,3 +8,9 @@
 .hamburger__icon {
   fill: #ffffff;
 }
+
+@media (min-width: $desktop-width) {
+  .hamburger {
+    display: none;
+  }
+}

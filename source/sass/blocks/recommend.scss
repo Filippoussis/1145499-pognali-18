@@ -1,3 +1,10 @@
+
+.recommend {
+  position: absolute;
+  transform: translateY(-25%);
+  width: 100%;
+}
+
 .recommend__list {
   @include list-reset;
 }
@@ -21,6 +28,31 @@
   }
   &--4 {
     background-color: #ffd74b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .recommend {
+    transform: translateY(-50%);
+  }
+
+  .recommend__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .recommend__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommend {
+    transform: translateY(-200%);
+  }
+
+  .recommend__item {
+    width: 25%;
   }
 }
 

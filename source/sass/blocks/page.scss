@@ -10,5 +10,21 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    margin-bottom: 200px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }

@@ -1,0 +1,24 @@
+@media (min-width: $mobile-width) {
+  .banner {
+    text-align: end;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .banner__image {
+    width: 372px;
+    height: 451px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner__image {
+    position: absolute;
+    transform: translate(-20%, -40%);
+    left: 50%;
+    width: 431px;
+    height: 640px;
+  }
+}
+
