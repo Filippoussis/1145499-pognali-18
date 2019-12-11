@@ -43,7 +43,7 @@
   fill: #161c35;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .feedback__item:not(:last-child) {
     display: none;
   }
