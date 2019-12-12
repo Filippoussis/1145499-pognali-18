@@ -1,7 +1,7 @@
 
   .intro {
     position: relative;
-    min-height: 478px;
+    min-height: 855px;
     background-color: #161c36;
     background-image: url(../../img/globe-back-mobile@1x.jpg);
     @media (min-resolution: $retina-dppx) {
@@ -36,6 +36,11 @@
     }
     background-size: contain;
     background-position-x: 180px;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
 }

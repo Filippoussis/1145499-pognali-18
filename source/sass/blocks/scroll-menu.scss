@@ -1,9 +1,14 @@
-.scroll-menu {
+.scroll-menu__wrapper {
+  padding: 0 25px;
+}
+
+.scroll-menu__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 73px;
 }
+
+
 
 @media (min-width: $tablet-width) {
   .scroll-menu {
