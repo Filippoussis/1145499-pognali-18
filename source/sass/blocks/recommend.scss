@@ -1,11 +1,9 @@
 .recommend {
   position: absolute;
-  transform: translateY(-25%);
   width: 100%;
-}
-
-.recommend__wrapper {
   padding: 0 25px;
+  transform: translateY(-25%);
+  z-index: 1000;
 }
 
 .recommend__list {
@@ -35,6 +33,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .recommend {
+    width: 768px;
+    padding: 0 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   .recommend__list {
     display: flex;
@@ -48,7 +52,9 @@
 
 @media (min-width: $desktop-width) {
   .recommend {
-    transform: translateY(-200%);
+    width: 1440px;
+    padding: 0 60px;
+    transform: translate(-50%, -175%);
   }
 
   .recommend__item {

@@ -6,9 +6,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-menu__authorization,
-  .main-menu__socials,
-  .main-menu__contacts {
+  .main-menu__item:not(:first-child) {
     display: none;
   }
 }

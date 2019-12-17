@@ -1,0 +1,17 @@
+.footer__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include tablet-wrapper;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    @include desktop-wrapper;
+  }
+}

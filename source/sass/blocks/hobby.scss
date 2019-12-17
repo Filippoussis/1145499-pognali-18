@@ -1,8 +1,15 @@
 .hobby__list {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hobby__link {
   line-height: 1.13;
   color: #444444;
+}
+
+.hobby {
+  clear: both;
 }

@@ -1,12 +1,20 @@
 
 .pagination__link {
-  text-decoration: none;
   text-transform: uppercase;
   color: #1d2e5b;
 }
 
 .pagination__list {
+  display: flex;
+  justify-content: space-between;
   @include list-reset;
+  padding: 10px;
+  width: 20%;
+}
+
+.pagination__wrapper {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 
@@ -14,3 +22,18 @@
   fill: #192144;
 }
 
+.pagination__active-item {
+  text-align: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .pagination__list {
+    &--numbers {
+      display: none;
+    }
+  }
+
+  .pagination__wrapper {
+    justify-content: center;
+  }
+}
