@@ -1,5 +1,16 @@
 .profile {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #edeff6;
+}
+
+.profile__wrapper {
+  padding: 0 25px;
+}
+
+.profile__title {
+  margin: 0;
+  text-align: center;
 }
 
 .profile__title-link {
@@ -7,4 +18,16 @@
   font-weight: 700;
   line-height: 1;
   color: #ff8d30;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__wrapper {
+   @include tablet-wrapper;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__wrapper {
+    @include desktop-wrapper;
+  }
 }

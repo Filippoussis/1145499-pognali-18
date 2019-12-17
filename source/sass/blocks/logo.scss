@@ -9,3 +9,25 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 166px;
+    height: 42px;
+
+    &--footer {
+      width: 164px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 200px;
+    height: 52px;
+
+    &--footer {
+      width: 164px;
+    }
+  }
+}

@@ -4,6 +4,23 @@
   }
 }
 
-.main__intro {
-  background-color: #161c35;
+.main__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .main__wrapper {
+    @include tablet-wrapper;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__wrapper {
+    @include desktop-wrapper;
+  }
+
+  .main__column {
+    display: flex;
+    justify-content: space-between;
+  }
 }

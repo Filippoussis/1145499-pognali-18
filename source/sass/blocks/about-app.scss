@@ -1,8 +1,18 @@
 .about-app {
+  position: relative;
+  min-height: 630px;
+  padding-top: 300px;
   background-color: #192144;
 }
 
+.about-app__wrapper {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-app__title {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -16,3 +26,45 @@
   }
 }
 
+.about-app__picture {
+    flex-shrink: 0;
+  }
+
+@media (max-width: $mobile-width-only) {
+  .about-app__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-app__desc {
+    z-index: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-app__wrapper {
+    @include tablet-wrapper;
+  }
+
+  .about-app__desc {
+    order: -1;
+  }
+
+  .about-app__image {
+    width: 376px;
+    height: 548px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-app__wrapper {
+    @include desktop-wrapper;
+  }
+
+  .about-app__image {
+    width: 630px;
+    height: 665px;
+  }
+}

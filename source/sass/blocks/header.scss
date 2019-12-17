@@ -1,3 +1,115 @@
 .header {
-  background-color: #161c36;
+  &--index {
+    position: relative;
+    min-height: 478px;
+    background-color: #161c36;
+    background-image: url(../../img/globe-back-mobile@1x.jpg);
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../../img/globe-back-mobile@2x.jpg);
+    }
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &--catalog {
+    min-height: 145px;
+    background-color: #161c35;
+  }
+}
+
+.header__wrapper {
+  padding: 0 25px;
+}
+
+.header__page-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  color: #ffffff;
+
+  &--catalog {
+    text-align: left;
+  }
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $mobile-width-only) {
+  .header__link {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    &--index {
+      min-height: 995px;
+      background-color: #182044;
+      background-image: url(../../img/globe-back-tablet@1x.jpg);
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(../../img/globe-back-tablet@2x.jpg);
+      }
+      background-position-y: 100%;
+      background-size: 1479px 612px;
+    }
+
+    &--catalog {
+      min-height: 350px;
+    }
+  }
+
+  .header__wrapper {
+    @include tablet-wrapper;
+  }
+
+  .header__page-title {
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .header__link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    &--index {
+      min-height: 750px;
+      background-color: #161c34;
+      background-image: url(../../img/globe-back-desktop@1x.jpg);
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(../../img/globe-back-desktop@2x.jpg);
+      }
+      background-size: contain;
+      background-position-x: 180px;
+    }
+  }
+
+  .header__wrapper {
+    @include desktop-wrapper;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__page-title {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }

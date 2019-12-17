@@ -1,0 +1,17 @@
+.scroll-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .scroll-menu {
+    min-height: 132px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .scroll-menu {
+    min-height: 91px;
+  }
+}

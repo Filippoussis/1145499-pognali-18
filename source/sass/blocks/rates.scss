@@ -1,5 +1,6 @@
 .rates {
   &--business {
+    display: none;
     background-color: #ffffff;
   }
 }
@@ -22,5 +23,12 @@
 .rates__link {
   line-height: 1;
   color: #192144;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__item {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 

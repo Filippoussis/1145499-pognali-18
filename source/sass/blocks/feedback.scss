@@ -1,6 +1,5 @@
-.feedback {
+.feedback__list {
   display: flex;
-  justify-content: space-between;
   @include list-reset;
 }
 
@@ -23,4 +22,30 @@
 
 .feedback__icon {
   fill: #161c35;
+}
+
+@media (max-width: $mobile-width-only) {
+  .feedback {
+    position: absolute;
+    padding: 0 25px;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+    &--catalog {
+      display: none;
+    }
+  }
+
+  .feedback__item:last-child {
+    flex-grow: 1;
+  }
+}
+
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only){
+  .feedback__item:not(:last-child) {
+    display: none;
+  }
 }

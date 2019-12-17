@@ -1,8 +1,15 @@
 .trends {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #edeff6;
 }
 
+.trends__wrapper {
+  padding: 0 25px;
+}
+
 .trends__title {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -17,3 +24,40 @@
   @include list-reset;
 }
 
+.trends__button {
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .trends__wrapper {
+   @include tablet-wrapper;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trends__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include desktop-wrapper;
+  }
+
+  .trends__header {
+    width: 630px;
+    order: 1;
+  }
+
+  .trends__list {
+    width: 630px;
+  }
+
+  .trends__button {
+    &--desktop {
+      display: block;
+    }
+    &--mobile-tablet {
+      display: none;
+    }
+  }
+}

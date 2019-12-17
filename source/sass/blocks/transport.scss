@@ -1,5 +1,6 @@
 .transport__list {
   @include list-reset;
+  display: flex;
 }
 
 .transport__icon {
@@ -9,5 +10,10 @@
   }
 }
 
-
-
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .transport__list {
+    &--catalog {
+      flex-direction: column;
+    }
+  }
+}

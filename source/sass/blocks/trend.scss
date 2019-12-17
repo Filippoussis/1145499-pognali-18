@@ -18,3 +18,29 @@
   line-height: 1.88;
   color: #c7c7c7;
 }
+
+@media (min-width: $tablet-width) {
+  .trend {
+    display: flex;
+  }
+
+  .trend__icon {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 70px;
+    height: 47px;
+  }
+
+  .trend__image {
+    width: 186px;
+    height: 140px;
+    flex-shrink: 0;
+  }
+
+  .trend__header {
+    position: relative;
+    flex-grow: 1;
+  }
+}
