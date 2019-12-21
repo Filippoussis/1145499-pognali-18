@@ -3,3 +3,24 @@
   background-color: #edeff6;
 }
 
+.form-personaly__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-personaly__wrapper {
+    @include tablet-wrapper;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-personaly__wrapper {
+    @include desktop-wrapper;
+  }
+
+  .form-personaly__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

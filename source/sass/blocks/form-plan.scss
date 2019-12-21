@@ -1,6 +1,9 @@
 .form-plan {
-  padding: 30px 25px;
   background-color: #d4d9eb;
+}
+
+.form-plan__wrapper {
+  padding: 0 25px;
 }
 
 .form-plan__title {
@@ -15,7 +18,28 @@
 }
 
 .form-plan__item {
-  padding: 20px;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .form-plan__wrapper {
+    @include tablet-wrapper;
+  }
+
+  .form-plan__pages {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-plan__wrapper {
+    @include desktop-wrapper;
+  }
+
+  .form-plan__header {
+    display: flex;
+    justify-content: space-between;
+  }
 }

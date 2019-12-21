@@ -29,3 +29,28 @@
   font-weight: 400;
   color: #444444;
 }
+
+
+@media (min-width: $tablet-width) {
+  .plan-date__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-date__inner--2 {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-date__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .plan-date__inner--2 {
+    width: 100%;
+  }
+}
+

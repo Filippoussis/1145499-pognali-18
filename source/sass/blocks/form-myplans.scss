@@ -1,6 +1,9 @@
 .form-myplans {
-  padding: 29px 26px;
   background-color: #dfe3f0;
+}
+
+.form-myplans__wrapper {
+  padding: 0 25px;
 }
 
 .form-myplans__title {
@@ -15,7 +18,6 @@
 }
 
 .form-myplans__item {
-  padding: 20px;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -41,4 +43,30 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .form-myplans__wrapper {
+    @include tablet-wrapper;
+  }
+
+  .form-myplans__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .form-myplans__text {
+    &--country {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-myplans__wrapper {
+    @include desktop-wrapper;
+  }
 }
