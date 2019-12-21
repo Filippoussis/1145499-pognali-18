@@ -1,4 +1,7 @@
 .header {
+  min-height: 145px;
+  background-color: #161c35;
+
   &--index {
     position: relative;
     min-height: 478px;
@@ -12,11 +15,6 @@
     background-repeat: no-repeat;
     background-size: auto;
   }
-
-  &--catalog {
-    min-height: 145px;
-    background-color: #161c35;
-  }
 }
 
 .header__wrapper {
@@ -28,12 +26,8 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-
-  &--catalog {
-    text-align: left;
-  }
 }
 
 .header__title {
@@ -49,6 +43,8 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    min-height: 350px;
+
     &--index {
       min-height: 995px;
       background-color: #182044;
@@ -58,10 +54,6 @@
       }
       background-position-y: 100%;
       background-size: 1479px 612px;
-    }
-
-    &--catalog {
-      min-height: 350px;
     }
   }
 

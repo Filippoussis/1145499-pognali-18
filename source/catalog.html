@@ -87,7 +87,7 @@
             </ul>
           </div>
 
-          <div class="feedback feedback--catalog">
+          <div class="feedback">
             <ul class="feedback__list">
               <li class="feedback__item">
                 <a class="feedback__link feedback__link--phone" href="#">
@@ -280,25 +280,25 @@
     <section class="filter-companions">
       <h2 class="filter-companions__title">Подберите идеального попутчика</h2>
       <form class="filter-companions__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="filter-group">
-          <legend class="filter-group__title">Хобби</legend>
-          <ul class="filter-group__list">
-            <li class="filter-group__item">
-              <input type="checkbox" name="hobby" id="sport">
-              <label class="filter-group__label" for="sport">Спорт</label>
-            </li>
-            <li class="filter-group__item">
-              <input type="checkbox" name="hobby" id="web-develop">
-              <label class="filter-group__label" for="web-develop">Веб-разработка</label>
-            </li>
-            <li class="filter-group__item">
-               <input type="checkbox" name="hobby" id="tourism">
-               <label class="filter-group__label" for="tourism">Туризм</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-group">
-          <legend class="filter-group__title">Музыка</legend>
+        <div class="filter-group">
+            <p class="filter-group__title">Хобби</p>
+            <ul class="filter-group__list">
+              <li class="filter-group__item">
+                <input type="checkbox" name="hobby" id="sport">
+                <label class="filter-group__label" for="sport">Спорт</label>
+              </li>
+              <li class="filter-group__item">
+                <input type="checkbox" name="hobby" id="web-develop">
+                <label class="filter-group__label" for="web-develop">Веб-разработка</label>
+              </li>
+              <li class="filter-group__item">
+                <input type="checkbox" name="hobby" id="tourism">
+                <label class="filter-group__label" for="tourism">Туризм</label>
+              </li>
+            </ul>
+          </div>
+        <div class="filter-group">
+          <p class="filter-group__title">Музыка</p>
           <ul class="filter-group__list">
             <li class="filter-group__item">
               <input type="checkbox" name="music" id="heavy-rock" checked>
@@ -313,9 +313,9 @@
               <label class="filter-group__label" for="euro-dance">Евроденс</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter-group">
-          <legend class="filter-group__title">Еда</legend>
+        </div>
+        <div class="filter-group">
+          <p class="filter-group__title">Еда</p>
           <ul class="filter-group__list">
             <li class="filter-group__item">
               <input type="checkbox" name="food" id="fruit">
@@ -330,38 +330,46 @@
                <label class="filter-group__label" for="tourism">Курица</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter-group">
-          <legend class="filter-group__title">Транспорт</legend>
+        </div>
+        <div class="filter-group">
+          <p class="filter-group__title">Транспорт</p>
           <ul class="filter-group__list">
             <li class="filter-group__item">
               <input type="checkbox" name="transport" id="plane" checked>
               <label class="filter-group__label" for="plane">
-                <img src="#" alt="Пользователь предпочитает путешествовать на самолете" width="14" height="16">
+                <svg class="transport__icon transport__icon--active" width="14" height="16">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg>
               </label>
             </li>
             <li class="filter-group__item">
               <input type="checkbox" name="transport" id="car" checked>
               <label class="filter-group__label" for="car">
-                <img src="#" alt="Пользователь предпочитает путешествовать на автомобиле" width="13" height="16">
+                <svg class="transport__icon transport__icon--active" width="13" height="16">
+                  <use xlink:href="img/sprite.svg#car"></use>
+                </svg>
               </label>
             </li>
             <li class="filter-group__item">
               <input type="checkbox" name="transport" id="bicycle">
               <label class="filter-group__label" for="bicycle">
-                <img src="#" alt="Пользователь предпочитает путешествовать на велосипеде" width="19" height="17">
+                <svg class="transport__icon" width="19" height="17">
+                  <use xlink:href="img/sprite.svg#bicycle"></use>
+                </svg>
               </label>
             </li>
             <li class="filter-group__item">
               <input type="checkbox" name="transport" id="afoot" checked>
               <label class="filter-group__label" for="afoot">
-                <img src="#" alt="Пользователь предпочитает путешествовать пешком" width="15" height="17">
+                <svg class="transport__icon transport__icon--active" width="15" height="17">
+                  <use xlink:href="img/sprite.svg#afoot"></use>
+                </svg>
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter-group filter-level">
-          <legend class="filter-group__title">Левел</legend>
+        </div>
+        <div class="filter-group filter-level">
+          <p class="filter-group__title">Левел</p>
           <div class="filter-level__wrapper">
             <input type="text" value="30">
             <input type="text" value="100">
@@ -369,7 +377,7 @@
           <div class="filter-level__scale">
             <div class="filter-level__bar"></div>
           </div>
-        </fieldset>
+        </div>
 
         <p class="button-catalog"><button class="button-catalog__filter" type="button">Показать</button></p>
 

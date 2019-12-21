@@ -20,3 +20,15 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .filter-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-group__list {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+}

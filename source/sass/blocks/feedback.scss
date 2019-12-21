@@ -26,15 +26,15 @@
 
 @media (max-width: $mobile-width-only) {
   .feedback {
-    position: absolute;
-    padding: 0 25px;
-    width: 100%;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 50%);
+    display: none;
 
-    &--catalog {
-      display: none;
+    &--index {
+      position: absolute;
+      padding: 0 25px;
+      width: 100%;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
     }
   }
 
@@ -42,7 +42,6 @@
     flex-grow: 1;
   }
 }
-
 
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only){
   .feedback__item:not(:last-child) {

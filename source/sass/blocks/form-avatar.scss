@@ -1,4 +1,41 @@
 .form-avatar {
+  &--header {
+    display: none;
+  }
+
   border: none;
+  flex-shrink: 0;
 }
+
+.form-avatar__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .form-avatar__image {
+    width: 94px;
+    height: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-avatar {
+    &--header {
+      display: block;
+    }
+
+    &--main {
+      display: none;
+    }
+  }
+
+  .form-avatar__image {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+
+
 
