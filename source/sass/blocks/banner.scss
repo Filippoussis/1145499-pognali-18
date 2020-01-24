@@ -1,14 +1,15 @@
-.banner {
-  padding: 0 25px;
-  text-align: end;
+.banner__image {
+  display: flex;
+}
+
+@media (max-width: $mobile-width-only) {
+  .banner__image {
+    margin-left: auto;
+    margin-right: 50px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .banner {
-    position: absolute;
-    bottom: 0;
-  }
-
   .banner__image {
     width: 372px;
     height: 451px;
@@ -16,11 +17,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .banner {
-    position: relative;
-    flex-shrink: 0;
-  }
-
   .banner__image {
     width: 431px;
     height: 640px;

@@ -1,6 +1,6 @@
 .socials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   @include list-reset;
 }
 
@@ -23,3 +23,11 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .socials__link {
+    &--footer {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

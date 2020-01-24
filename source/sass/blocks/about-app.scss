@@ -1,18 +1,25 @@
 .about-app {
   position: relative;
-  min-height: 630px;
-  padding-top: 300px;
+  margin-bottom: -30px;
+  padding-top: 310px;
+  padding-bottom: 81px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: #192144;
+  z-index: 10;
 }
 
 .about-app__wrapper {
   padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
+}
+
+.about-app__desc {
+  padding-left: 25px;
 }
 
 .about-app__title {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -20,51 +27,163 @@
 }
 
 .about-app__text {
+  margin: 0;
   color: #ffffff;
-  &--action {
+
+  &--1 {
+    width: 86%;
+  }
+  &--2 {
+    width: 80%;
     font-weight: 700;
   }
 }
 
-.about-app__picture {
-    flex-shrink: 0;
-  }
+.about-app__text:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.about-app__image {
+  display: flex;
+}
 
 @media (max-width: $mobile-width-only) {
-  .about-app__image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .about-app {
+    background-image:
+    url(../img/about-mobile@1x.png),
+    url(../img/blue-back.png);
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        url(../img/about-mobile@2x.png),
+        url(../img/blue-back.png);
+    }
+    background-repeat: no-repeat;
+    background-size: 292px 352px, 132px 132px;
+    background-position: 65% 100%, -20px 280px;
   }
 
-  .about-app__desc {
-    z-index: 1;
+  .about-app__picture {
+    display: none;
+  }
+
+  .about-app__button {
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .about-app {
+    margin-bottom: -60px;
+    padding-top: 280px;
+    padding-bottom: 90px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-image: url(../img/blue-back-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 688px 213px;
+    background-position: 50% 33%;
+  }
+
   .about-app__wrapper {
     @include tablet-wrapper;
+    display: flex;
+    justify-content: space-between;
   }
 
   .about-app__desc {
-    order: -1;
+    padding-left: 35px;
   }
+
+  .about-app__title {
+    margin-bottom: 36px;
+    font-size: 45px;
+  }
+
+  .about-app__text {
+    &--1 {
+      width: 300px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+
+    &--2 {
+      width: 291px;
+      font-size: 21px;
+      line-height: 1.19;
+    }
+  }
+
+  .about-app__text:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+
+  .about-app__text:last-of-type {
+    margin-bottom: 53px;
+  }
+
+  .about-app__picture {
+      margin-right: -35px;
+      flex-shrink: 0;
+    }
 
   .about-app__image {
     width: 376px;
     height: 548px;
   }
+
+  .about-app__button {
+    width: 91%;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .about-app {
+    padding-top: 85px;
+    padding-bottom: 0;
+    background-image: url(../img/blue-back-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 213px 213px;
+    background-position: 20% 13%;
+  }
+
   .about-app__wrapper {
     @include desktop-wrapper;
+  }
+
+  .about-app__desc {
+    padding-top: 45px;
+    padding-left: 70px;
+  }
+
+  .about-app__title {
+    margin-bottom: 60px;
+  }
+
+  .about-app__text {
+    &--1 {
+      width: 95%;
+    }
+
+    &--2 {
+      width: 65%;
+    }
   }
 
   .about-app__image {
     width: 630px;
     height: 665px;
+    transform: translateX(-35px);
+  }
+
+  .about-app__text:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  .about-app__text:last-of-type {
+    margin-bottom: 85px;
+  }
+
+  .about-app__button {
+    width: 42%;
   }
 }

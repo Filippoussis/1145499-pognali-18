@@ -13,21 +13,21 @@
 
     <header class="header header--index">
       <div class="header__wrapper">
-        <div class="scroll-menu">
+        <div class="scroll-menu header__scroll-menu">
           <p class="logo">
             <a class="logo__link">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
                 <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
                 <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png" alt="Логотип - Погнали" width="100" height="19">
               </picture>
             </a>
           </p>
 
-          <p class="hamburger">
+          <p class="hamburger scroll-menu__hamburger">
             <a class="hamburger__link" href="#">
               <svg class="hamburger__icon" width="25" height="11">
                 <use xlink:href="img/sprite.svg#hamburger"></use>
@@ -35,9 +35,9 @@
             </a>
           </p>
 
-          <div class="main-menu">
+          <div class="site-menu scroll-menu__site-menu">
 
-            <nav class="nav main-menu__item">
+            <nav class="nav site-menu__item">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link" href="#">О сервисе</a>
@@ -51,11 +51,11 @@
               </ul>
             </nav>
 
-            <p class="authorization main-menu__item">
+            <p class="authorization site-menu__item">
               <a class="authorization__link" href="#">Авторизация</a>
             </p>
 
-            <ul class="contacts main-menu__item">
+            <ul class="contacts site-menu__item">
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--phone" href="tel:88005558628">8 800 555-86-28</a>
               </li>
@@ -64,7 +64,7 @@
               </li>
             </ul>
 
-            <ul class="socials main-menu__item">
+            <ul class="socials site-menu__item">
               <li class="socials__item">
                 <a class="socials__link" href="#">
                   <svg class="socials__icon" width="11" height="21">
@@ -89,7 +89,7 @@
             </ul>
           </div>
 
-          <div class="feedback feedback--index">
+          <div class="feedback feedback--scroll-menu">
             <ul class="feedback__list">
               <li class="feedback__item">
                 <a class="feedback__link feedback__link--phone" href="#">
@@ -106,7 +106,7 @@
                 </a>
               </li>
               <li class="feedback__item">
-                <a class="authorization__link" href="#">Авторизация</a>
+                <a class="feedback__authorization-link" href="#">Авторизация</a>
               </li>
             </ul>
           </div>
@@ -114,21 +114,61 @@
 
         <div class="header__inner">
           <h1 class="header__page-title">В путешествие с крутыми попутчиками!</h1>
-          <div class="banner">
+          <div class="banner header__banner">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.webp 1x, img/traveller-illustration-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.webp 1x, img/traveller-illustration-tablet@2x.webp 2x">
               <source type="image/webp" srcset="traveller-illustration-mobile@1x.webp 1x, img/traveller-illustration-mobile@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png 1x, img/traveller-illustration-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png 1x, img/traveller-illustration-tablet@2x.png 2x">
               <img class="banner__image" src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png" alt="Изображен собирательный образ путешественника - силуэт человека с чемоданом" width="192" height="255">
             </picture>
           </div>
 
-          <section class="comments comments--inner">
+          <div class="feedback feedback--mobile">
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <a class="feedback__link feedback__link--phone" href="#">
+                  <svg class="feedback__icon" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="feedback__item">
+                <a class="feedback__link feedback__link--email" href="#">
+                  <svg class="feedback__icon" width="18" height="14">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="feedback__item">
+                <a class="feedback__authorization-link" href="#">Авторизация</a>
+              </li>
+            </ul>
+          </div>
+
+          <section class="comments header__comments">
             <h2 class="visually-hidden">Реальные отзывы от реальных пользователей приложения</h2>
-            <p class="comments__text comments__text--comment">&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
-            <p class="comments__text comments__text--author">Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</p>
+            <p class="comments__text comments__text--1">&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
+            <p class="comments__text comments__text--2">Мурат Эльтазин<br>главный редактор газеты &#171;гаджетлайф&#187;</p>
+          </section>
+
+          <section class="recommend">
+            <h2 class="visually-hidden">Рекомендации к использованию приложения</h2>
+            <ol class="recommend__list">
+              <li class="recommend__item recommend__item--1">
+                <p class="recommend__text recommend__text--1">Выберите направление</p>
+              </li>
+              <li class="recommend__item recommend__item--2">
+                <p class="recommend__text recommend__text--2">Изучите идеи путешественников</p>
+              </li>
+              <li class="recommend__item recommend__item--3">
+                <p class="recommend__text recommend__text--3">Находите тех, кто похож на вас</p>
+              </li>
+              <li class="recommend__item recommend__item--4">
+                <p class="recommend__text recommend__text--4">Путешествуйте вместе!</p>
+              </li>
+            </ol>
           </section>
         </div>
       </div>
@@ -137,50 +177,22 @@
 
       <main class="main main--index">
 
-      <section class="comments comments--outside">
-        <h2 class="visually-hidden">Реальные отзывы от реальных пользователей приложения</h2>
-        <p class="comments__text comments__text--comment">&#171;Лучшее приложение, что я видел в жизни!&#187;</p>
-        <p class="comments__text comments__text--author">Мурат Эльтазин главный редактор газеты &#171;гаджетлайф&#187;</p>
-      </section>
-
-      <section class="recommend">
-        <h2 class="visually-hidden">Рекомендации к использованию приложения</h2>
-        <ol class="recommend__list">
-          <li class="recommend__item">
-            <p class="recommend__text recommend__text--1">Выберите направление</p>
-          </li>
-          <li class="recommend__item">
-            <p class="recommend__text recommend__text--2">Изучите идеи путешественников</p>
-          </li>
-          <li class="recommend__item">
-            <p class="recommend__text recommend__text--3">Находите тех, кто похож на вас</p>
-          </li>
-          <li class="recommend__item">
-            <p class="recommend__text recommend__text--4">Путешествуйте вместе!</p>
-          </li>
-        </ol>
-      </section>
-
       <section class="about-app">
         <div class="about-app__wrapper">
-          <div class="about-app__item about-app__picture">
+          <div class="about-app__desc about-app__item">
+            <h2 class="about-app__title">О сервисе</h2>
+            <p class="about-app__text about-app__text--1">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="about-app__text about-app__text--2">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
+            <div class="about-app__button"><a class="index-link index-link--about-app" href="#">Подробнее</a></div>
+          </div>
+          <div class="about-app__picture about-app__item">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/about-desktop@1x.webp 1x, img/about-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/about-desktop@1x.png 1x, img/about-desktop@2x.png 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/about-tablet@1x.png 1x, img/about-tablet@2x.png 2x">
-              <img class="about-app__image" src="img/about-mobile@1x.png" srcset="img/about-mobile@2x.png" alt="Изображение карточки случайного пользователя с кнопкой 'Позвать', объясняющее основную цель приложения - поиск попутчиков по интересам" width="292" height="352">
+              <source media="(min-width: 1440px)" srcset="img/about-desktop@1x.png 1x, img/about-desktop@2x.png 2x">
+              <img class="about-app__image" src="img/about-tablet@1x.png" srcset="img/about-tablet@2x.png" alt="Изображен собирательный образ путешественника - силуэт человека с чемоданом" width="192" height="255">
             </picture>
           </div>
-
-          <div class="about-app__item about-app__desc">
-            <h2 class="about-app__title">О сервисе</h2>
-            <p class="about-app__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
-              Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-            <p class="about-app__text about-app__text--action">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
-          </div>
-
         </div>
       </section>
 
@@ -188,14 +200,12 @@
         <div class="trends__wrapper">
           <div class="trends__header">
             <h2 class="trends__title">Направления</h2>
-            <p class="trends__desc">Мы не продаем туры и ничего не рекламируем.
-              Люди сами пишут о странах, куда хотели бы отправиться
-              и чем можно там заняться.</p>
+            <p class="trends__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
             <p class="trends__button trends__button--desktop"><a class="index-link index-link--trends" href="#">Показать все</a></p>
           </div>
           <ul class="trends__list">
             <li class="trend trends__item">
-              <div class="trend__header">
+              <div class="trend__description">
                 <h3 class="trend__title">Тайланд</h3>
                 <p class="trend__slogan">Джунгли зовут!</p>
                 <span class="trend__traffic">18321</span>
@@ -213,7 +223,7 @@
               </div>
             </li>
             <li class="trend trends__item">
-              <div class="trend__header">
+              <div class="trend__description">
                 <h3 class="trend__title">Франция</h3>
                 <p class="trend__slogan">Трэ бьен, манифик!</p>
                 <span class="trend__traffic">12518</span>
@@ -231,7 +241,7 @@
               </div>
             </li>
             <li class="trend trends__item">
-              <div class="trend__header">
+              <div class="trend__description">
                 <h3 class="trend__title">Чехия</h3>
                 <p class="trend__slogan">Закоулки старой Европы</p>
                 <span class="trend__traffic">5326</span>
@@ -243,7 +253,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                   <img class="trend__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg" alt="Изображение Чехии" width="270" height="110">
                 </picture>
               </div>
@@ -257,9 +267,8 @@
         <div class="companions__wrapper">
           <div class="companions__header">
             <h2 class="companions__title">Попутчики</h2>
-            <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="companions__text">Теперь можно легко найти единомышлинников!</p>
+            <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions__text companions__text--bold">Теперь можно легко найти единомышленников!</p>
             <p class="companions__button companions__button--desktop"><a class="index-link index-link--companions" href="#">Показать всех</a></p>
           </div>
 
@@ -267,28 +276,28 @@
             <li class="companion companions__item">
 
               <div class="companion__avatar">
-                <picture>
+                <picture class="companion__picture">
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img class="companion__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg" alt="Изображение прекрасной Тани Фирсовой с золотистой от солнца кожей и в ярком купальнике, лежащей на поверхности прозрачной бирюзового цвета воды" width="270" height="270">
+                  <source type="image/webp" srcset="firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                  <img class="companion__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg" alt="Изображение прекрасной Тани Фирсовой с золотистой от солнца кожей и в ярком купальнике, лежащей на поверхности прозрачной бирюзового цвета воды" width="270" height="270">
                 </picture>
               </div>
 
               <div class="companion__info">
-              <h3 class="companion__title"><a class="companion__title-link" href="#">Таня Фирсова</a></h3>
+              <h3 class="companion__title"><a class="companion__title-link companion__title-link--1" href="#">Таня Фирсова</a></h3>
 
               <section class="hobby">
                 <h4 class="visually-hidden">увлечения</h4>
                 <ul class="hobby__list">
-                  <li class="hobby__item"><a class="hobby__link" href="#">#зож</a></li>
-                  <li class="hobby__item"><a class="hobby__link" href="#">#пп</a></li>
-                  <li class="hobby__item"><a class="hobby__link" href="#">#фитнес</a></li>
-                  <li class="hobby__item"><a class="hobby__link" href="#">#пляж</a></li>
-                  <li class="hobby__item"><a class="hobby__link" href="#">#авокадо</a></li>
-                  <li class="hobby__item"><a class="hobby__link" href="#">#смузи</a></li>
+                  <li class="hobby__item">#ЗОЖ</li>
+                  <li class="hobby__item">#ПП</li>
+                  <li class="hobby__item">#Фитнес</li>
+                  <li class="hobby__item">#пляж</li>
+                  <li class="hobby__item">#авокадо</li>
+                  <li class="hobby__item">#смузи</li>
                 </ul>
               </section>
 
@@ -337,38 +346,34 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="level">
-                  <span class="level__item level__label">левел</span>
-                  <span class="level__item level__value">99</span>
-                </p>
               </section>
               </div>
+              <p class="level">
+                <span class="level__item level__item--value">99</span>
+                <span class="level__item level__item--label">level</span>
+              </p>
             </li>
 
           <li class="companion companions__item">
 
             <div class="companion__avatar">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                <img class="companion__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg" alt="Изображение Пети Демина со стильно подстриженными рыжеватыми усами и бородой, в темной вязаной шапке и того же цвета пуловере, на размытом фоне заснеженных гор и леса" width="270" height="270">
+              <picture class="companion__picture">
+                <source type="image/webp" srcset="demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                <img class="companion__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg" alt="Изображение Пети Демина со стильно подстриженными рыжеватыми усами и бородой, в темной вязаной шапке и того же цвета пуловере, на размытом фоне заснеженных гор и леса" width="270" height="270">
               </picture>
             </div>
 
             <div class="companion__info">
-            <h3 class="companion__title"><a class="companion__title-link" href="#">Петя Демин</a></h3>
+            <h3 class="companion__title"><a class="companion__title-link companion__title-link--2" href="#">Петя Демин</a></h3>
 
             <section class="hobby">
               <h4 class="visually-hidden">увлечения</h4>
               <ul class="hobby__list">
-                <li class="hobby__item"><a class="hobby__link" href="#">#бургер</a></li>
-                <li class="hobby__item"><a class="hobby__link" href="#">#бар</a></li>
-                <li class="hobby__item"><a class="hobby__link" href="#">#футбол</a></li>
-                <li class="hobby__item"><a class="hobby__link" href="#">#концерт</a></li>
-                <li class="hobby__item"><a class="hobby__link" href="#">#крафт</a></li>
+                <li class="hobby__item">#бургер</li>
+                <li class="hobby__item">#бар</li>
+                <li class="hobby__item">#футбол</li>
+                <li class="hobby__item">#концерт</li>
+                <li class="hobby__item">#крафт</li>
               </ul>
             </section>
 
@@ -412,12 +417,12 @@
                   </svg>
                 </li>
               </ul>
-              <p class="level">
-                <span class="level__item level__label">левел</span>
-                <span class="level__item level__value">80</span>
-              </p>
             </section>
             </div>
+            <p class="level">
+              <span class="level__item level__item--value">80</span>
+              <span class="level__item level__item--label">level</span>
+            </p>
           </li>
         </ul>
         <p class="companions__button companions__button--mobile-tablet"><a class="index-link index-link--companions" href="#">Показать всех</a></p>
@@ -431,20 +436,20 @@
             <h2 class="visually-hidden">Базовые-тарифы</h2>
             <ol class="rates__list">
               <li class="rates__item">
-                <p class="rates__text">Базовое размещение</p>
+                <p class="rates__text rates__text--1">Базовое размещение</p>
                 <p class="rates__text">Бесплатно</p>
               </li>
               <li class="rates__item">
-                <p class="rates__text">Вывод на первых позициях</p>
+                <p class="rates__text rates__text--2">Вывод на первых позициях</p>
                 <p class="rates__text">99 руб./мес</p>
               </li>
               <li class="rates__item">
-                <p class="rates__text">Кастомный цвет карточки</p>
+                <p class="rates__text rates__text--3">Кастомный цвет карточки</p>
                 <p class="rates__text">59 руб./мес</p>
               </li>
             </ol>
 
-            <p class="rates__item"><a class="rates__link" href="#">Показать тарифы для бизнеса</a></p>
+            <p class="rates__item-link"><a class="rates__link" href="#">Показать тарифы для бизнеса</a></p>
           </section>
 
           <section class="rates rates--business">
@@ -473,16 +478,15 @@
         </section>
 
       <section class="reg">
-        <div class="container">
+        <div class="reg__wrapper">
           <h2 class="reg__title">Заинтересовались?</h2>
-          <p class="reg__text">Зарегистрируйтесь, это быстро и бесплатно!
-            Уже зарегистрированы? Тогда <a class="reg__link" href="#">авторизуйтесь</a>.</p>
+          <p class="reg__text">Зарегистрируйтесь, это быстро и бесплатно!</p>
+          <p class="reg__text reg__text--overform">Уже зарегистрированы? Тогда скорее <a class="reg__link" href="#">авторизуйтесь</a>.</p>
           <form class="reg__form" action="https://echo.htmlacademy.ru" method="POST">
             <input class="reg__input" type="email" name="email" placeholder="E-mail">
-            <button class="reg__button" type="submit">Отправить</button>
+            <button class="reg__button" type="submit"><span class="reg__button--value">Регистрация</span></button>
           </form>
-          <p class="reg__text">Остались вопросы?</p>
-          <p class="reg__text">Мы с радостью на них ответим!</p>
+          <p class="reg__text reg__text--underform">Остались вопросы? Мы с радостью на них ответим!</p>
           <ul class="contacts">
             <li class="contacts__item">
               <a class="contacts__link contacts__link--phone contacts__link--reg" href="tel:88005558628">8 800 555-86-28</a>
@@ -495,21 +499,35 @@
       </section>
 
       <section class="address">
-        <div class="container">
+        <div class="address__wrapper">
           <h2 class="visually-hidden">Местонахождение офиса компании - Погнали</h2>
           <address class="address__info">ул. Большая Конюшенная, 19/8</address>
           <p class="address__item"><a class="index-link index-link--address" href="#">Проложить маршрут</a></p>
-          <p class="address__map"><img src="#" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="320" height="546"></p>
         </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта с обозначением местонахождени] офиса компании - Погнали</h2>
+        <div class="map__item">
+          <picture class="map__picture">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-table@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="320" height="546">
+          </picture>
+        </div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003244!2d30.320858716317513!3d59.93871916905395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1577218383360!5m2!1sru!2sru" style="border:0;" allowfullscreen=""></iframe>
       </section>
 
     </main>
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <p class="logo logo--footer">
+        <p class="logo logo--footer footer__logo">
           <a class="logo__link">
-            <picture>
+            <picture class="logo__picture">
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
               <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
@@ -520,7 +538,7 @@
           </a>
         </p>
 
-        <ul class="socials">
+        <ul class="socials socials--footer footer__socials">
           <li class="socials__item">
             <a class="socials__link socials__link--footer" href="#">
               <svg class="socials__icon socials__icon--footer" width="11" height="21">

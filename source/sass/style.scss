@@ -4,18 +4,15 @@
 @import "fonts.scss";
 @import "global.scss";
 @import "blocks/visually-hidden.scss";
-@import "blocks/sprite.scss";
 @import "blocks/index-link.scss";
 @import "blocks/button.scss";
 @import "blocks/page.scss";
-@import "blocks/container.scss";
 @import "blocks/header.scss";
 @import "blocks/scroll-menu.scss";
 @import "blocks/logo.scss";
 @import "blocks/hamburger.scss";
-@import "blocks/main-menu.scss";
+@import "blocks/site-menu.scss";
 @import "blocks/nav.scss";
-@import "blocks/authorization.scss";
 @import "blocks/contacts.scss";
 @import "blocks/socials.scss";
 @import "blocks/banner.scss";
@@ -36,6 +33,7 @@
 @import "blocks/rates.scss";
 @import "blocks/reg.scss";
 @import "blocks/address.scss";
+@import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/web-dev.scss";
 @import "blocks/pagination.scss";
@@ -55,4 +53,3 @@
 @import "blocks/plan-hobby.scss";
 @import "blocks/countries-filter.scss";
 @import "blocks/steps.scss";
-

@@ -1,12 +1,13 @@
 @media (max-width: $tablet-width-only) {
-  .main-menu {
-  display: none;
-  background-color: #ffffff;
+  .site-menu {
+    display: none;
+    background-color: #ffffff;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-menu__item:not(:first-child) {
+
+  .site-menu__item:not(:first-child) {
     display: none;
   }
 }

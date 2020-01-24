@@ -1,6 +1,9 @@
 .transport__list {
   @include list-reset;
   display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
 }
 
 .transport__icon {

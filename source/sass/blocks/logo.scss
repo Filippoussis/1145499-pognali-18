@@ -1,13 +1,9 @@
 .logo {
-  &--footer {
-    text-align: center;
-  }
+  margin: 0;
 }
 
-.logo__link {
+.logo__image {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
