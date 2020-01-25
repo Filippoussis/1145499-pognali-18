@@ -1,42 +1,111 @@
 .trends {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: -30px;
+  padding-top: 102px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: #edeff6;
+  z-index: 9;
 }
 
 .trends__wrapper {
   padding: 0 25px;
 }
 
+.trends__header {
+  margin-bottom: 60px;
+  padding-left: 25px;
+}
+
 .trends__title {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
   color: #ff8d30;
 }
 
-.trends__desc {
+.trends__text {
+  margin: 0;
+  width: 200px;
   color: #444444;
 }
 
 .trends__list {
   @include list-reset;
+  margin-bottom: 27px;
+}
+
+.trends__item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .trends__button {
+  margin: 0;
   &--desktop {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .trends {
+    margin-bottom: -60px;
+    padding-top: 132px;
+    padding-bottom: 78px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-image:
+      url(../img/flags-back@1x.png),
+      url(../img/grey-back.png);
+    background-size: 289px 575px, 141px 141px;
+    background-position: 91.5% 24%, 6% 46%;
+    background-repeat: no-repeat;
+
+  }
+
   .trends__wrapper {
-   @include tablet-wrapper;
+    @include tablet-wrapper;
+  }
+
+  .trends__header {
+    margin-bottom: 104px;
+    padding-left: 35px;
+  }
+
+  .trends__title {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+
+  .trends__text {
+    font-size: 28px;
+    line-height: 1.18;
+    width: 52%;
+  }
+
+  .trends__list {
+    padding: 0 35px;
+    margin-bottom: 45px;
+  }
+
+  .trends__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .trends__button {
+    padding: 0 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .trends {
+    padding-top: 222px;
+    padding-bottom: 33px;
+    background-position: 79.3% 63%, 19% 22%;
+  }
+
   .trends__wrapper {
     display: flex;
     justify-content: space-between;
@@ -45,14 +114,32 @@
 
   .trends__header {
     width: 630px;
-    order: 1;
+    padding-top: 5px;
+    padding-left: 112px;
+  }
+
+  .trends__text {
+    width: 66%;
+    margin-bottom: 94px;
+  }
+
+  .trends__title {
+    margin-bottom: 58px;
   }
 
   .trends__list {
     width: 630px;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 70px;
+    order: -1;
   }
 
   .trends__button {
+
+    padding: 0;
+    width: 53%;
+
     &--desktop {
       display: block;
     }

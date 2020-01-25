@@ -5,24 +5,24 @@
 .contacts__link {
   display: block;
   position: relative;
-  padding-left: 50px;
+  padding-left: 60px;
   font-weight: 700;
   text-decoration: none;
   color: #192144;
 
   &--phone {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     &::before {
       content: "";
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       left: 0;
+      transform: translateY(-50%);
       width: 45px;
       height: 45px;
       border-radius: 50%;
       background-color: #121936;
-      background-image: url(../../img/contacts-phone-yellow.svg);
+      background-image: url(../img/contacts-phone.svg);
       background-size: 18px 18px;
       background-repeat: no-repeat;
       background-position: 50%;
@@ -35,14 +35,14 @@
       content: "";
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       left: 0;
+      transform: translateY(-50%);
       width: 45px;
       height: 45px;
       border-radius: 50%;
       background-color: #121936;
       background-size: 18px 13px;
-      background-image: url(../../img/contacts-mail-yellow.svg);
+      background-image: url(../img/contacts-mail.svg);
       background-repeat: no-repeat;
       background-position: 50%;
     }
@@ -50,5 +50,62 @@
 
   &--reg {
     color: #ffd74b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0 35px;
+  }
+
+  .contacts__link {
+    padding-left: 90px;
+    font-size: 28px;
+
+    &--phone {
+      &::before {
+        width: 68px;
+        height: 68px;
+        background-size: 27px 27px;
+      }
+    }
+
+    &--email {
+      &::before {
+        width: 68px;
+        height: 68px;
+        background-size: 27px 20px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .contacts {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contacts__link {
+      padding-left: 120px;
+      &--phone {
+        &::before {
+          width: 90px;
+          height: 90px;
+          background-size: 36px 36px;
+        }
+      }
+
+      &--email {
+        &::before {
+          width: 90px;
+          height: 90px;
+          background-size: 36px 26px;
+        }
+      }
+    }
+
+    .contacts__item:not(:last-of-type) {
+      margin-right: 110px;
+    }
   }
 }

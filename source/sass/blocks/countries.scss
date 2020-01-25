@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.countries__item:not(:last-child) {
+  margin-right: 18px;
+}
+
 @media (max-width: $mobile-width-only) {
   .countries {
     &--outside {

@@ -4,26 +4,41 @@
 }
 
 .nav__link {
-  display: block;
+  display: flex;
+  transform: translateY(10%);
   font-size: 30px;
   font-weight: 500;
   line-height: 1.2;
-  text-align: center;
   text-transform: uppercase;
   color: #192144;
 }
 
 @media (min-width: $desktop-width) {
+  .nav {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(50%);
+      left: -105px;
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+
   .nav__list {
     display: flex;
   }
 
   .nav__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 34px;
   }
 
   .nav__link {
     font-size: 20px;
+    line-height: 1.5;
     color: #ffffff;
   }
 }

@@ -1,16 +1,77 @@
 .index-link {
-  display: block;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
   background-color: #ffd74b;
   color: #1d2e5b;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 14px;
+    background-image: url(../img/triangle-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 10px 14px;
+  }
+
+  &--about-app {
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 34px;
+    padding-bottom: 24px;
+    border-radius: 15px;
+    font-size: 24px;
+  }
+
   &--address {
-    border: 2px solid #192144;
+    padding: 20px;
+    padding-bottom: 18px;
+    border: 3px solid #192144;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .index-link {
+    &--trends {
+      padding-top: 30px;
+      padding-left: 33px;
+      padding-right: 35px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+      font-size: 24px;
+    }
 
+    &--companions {
+      padding-top: 30px;
+      padding-left: 33px;
+      padding-right: 35px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+      font-size: 24px;
+    }
+
+    &--address {
+      padding: 25px 33px;
+      border-radius: 20px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-link {
+    &--companions {
+      width: 55%;
+    }
+  }
+}
 

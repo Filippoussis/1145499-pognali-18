@@ -1,15 +1,38 @@
+.hobby {
+  margin-bottom: 15px;
+  clear: both;
+}
+
 .hobby__list {
   @include list-reset;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 180px;
+  margin: 0 auto;
 }
 
-.hobby__link {
+.hobby__item {
   line-height: 1.13;
+  font-weight: 500;
   color: #444444;
 }
 
-.hobby {
-  clear: both;
+.hobby__item:not(:last-child) {
+  margin-right: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .hobby {
+    margin-bottom: 25px;
+  }
+
+  .hobby__item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .hobby__list {
+    width: 250px;
+  }
 }

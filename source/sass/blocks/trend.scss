@@ -1,4 +1,18 @@
+.trend {
+  display: flex;
+}
+
+.trend__description {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
 .trend__title {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 1;
@@ -6,41 +20,132 @@
 }
 
 .trend__slogan {
-  font-size: 16px;
+  margin: 0;
   font-weight: 500;
   line-height: 1.13;
   color: #c7c7c7;
 }
 
 .trend__traffic {
-  font-size: 16px;
+  display: flex;
   font-weight: 500;
-  line-height: 1.88;
+  line-height: 1;
+  text-align: end;
   color: #c7c7c7;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+  }
+}
+
+.trend__image {
+  display: flex;
+}
+
+.trend__icon {
+  position: absolute;
+}
+
+@media (max-width: $mobile-width-only) {
+  .trend {
+    flex-direction: column;
+  }
+
+  .trend__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    order: 1;
+  }
+
+  .trend__slogan {
+     order: 1;
+  }
+
+  .trend__image {
+    width: 100%;
+    margin-bottom: -13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .trend__icon {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .trend {
-    display: flex;
+  .trend__description {
+    position: relative;
+    padding-left: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-grow: 1;
+  }
+
+  .trend__title {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .trend__slogan {
+    font-size: 20px;
+    margin-bottom: 17px;
+  }
+
+  .trend__traffic {
+    font-size: 20px;
+
+    &::before {
+      margin-right: 10px;
+      width: 20px;
+      height: 21px;
+      background-size: 20px 21px;
+    }
   }
 
   .trend__icon {
     position: absolute;
-    top: 35%;
-    right: 0;
-    transform: translate(50%, -50%);
     width: 70px;
     height: 47px;
+    top: 10%;
+    right: 0;
+    transform: translateX(50%);
   }
 
   .trend__image {
     width: 186px;
     height: 140px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     flex-shrink: 0;
   }
+}
 
-  .trend__header {
-    position: relative;
-    flex-grow: 1;
+@media (min-width: $desktop-width) {
+  .trend__description {
+    padding-top: 23px;
+  }
+
+  .trend__title {
+    margin-bottom: 3px;
+  }
+
+  .trend__slogan {
+    margin-bottom: 25px;
+  }
+
+  .trend__icon {
+    top: 16%;
   }
 }

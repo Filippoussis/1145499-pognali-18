@@ -1,46 +1,56 @@
 .comments__text {
   margin: 0;
+  width: 160px;
   color: #ffffff;
 
-  &--comment {
-    font-weight: 300;
-  }
-
-  &--author {
+  &--2 {
     font-weight: 700;
   }
 }
 
+.comments__text:not(:last-child) {
+  margin-bottom: 17px;
+}
+
 @media (max-width: $mobile-width-only) {
   .comments {
-    &--inner {
-      display: none;
-    }
-    &--outside {
-      padding: 25px 25px 150px;
-      background-color: #161c35;
-    }
+    padding-top: 48px;
+    padding-left: 50px;
+    padding-bottom: 110px;
+    background-color: #161c35;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .comments {
+    padding-left: 35px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .comments {
-    &--inner {
-      display: block;
+
+  .comments__text {
+    width: 275px;
+
+    &--1 {
+      font-size: 28px;
+      line-height: 1.18;
     }
-    &--outside {
-      display: none;
+
+    &--2 {
+      font-size: 21px;
+      line-height: 1.19;
     }
   }
 
-  .comments__text {
-    &--comment {
-      font-size: 28px;
-    }
+  .comments__text:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
 
-    &--author {
-      font-size: 21px;
-      font-weight: 700;
-    }
+@media (min-width: $desktop-width) {
+  .comments {
+    padding-top: 110px;
+    padding-right: 10px;
   }
 }
